@@ -1,0 +1,90 @@
+<div class="left_side d-none d-lg-block"></div>
+<div class="main_bg ">
+    <div class="container-fluid">
+        <div class="row p-0 m-0">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-9 m-0 p-0">
+                <div class="pl-lg-5 pl-md-4 pl-sm-0">
+                    <div class="d-inline-flex main_padding">
+                        <p><b class="gram_name">Gram</b></p>
+                        <p class="panch_text">panchayt</p>
+                    </div>
+                    <div>
+                        <div class="d-inline-flex">
+                            <small class="vill_maintext vill_text"><b class="vill">Empowering Villages</b> and changing
+                                the
+                                life of the
+                                farmers</small>&nbsp;
+                        </div>
+                    </div>
+
+                     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="">
+
+                            <div class="form-group input_label">
+                                <label class="label">PHONE NO / EMAIL / USERNAME</label>
+                                <div class="d-flex">
+
+                                    <input type="Email" formControlName="Email" placeholder=""
+                                        class="form-control input mt-1"
+                                        [ngClass]="{ 'is-invalid': submitted && f.Email.errors }" />
+
+                                    <button class="btn btn-sm bg-dark text-white mt-1"><i
+                                            class="fa-solid fa-chevron-right text-white"></i></button>
+                                </div>
+                                <div *ngIf="submitted && f.Email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.Email.errors.required">Email: is required</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form> 
+                    <div class="note_padding">
+                        <b class="note">Note</b>
+                        <p class="note_p">Make sure that you are using your registered email ID for signing up with the
+                            gram<br class="d-none d-md-block d-lg-block">
+                            panchayat app. We do
+                            not recommend you to share your password with anyone.</p>
+                    </div>
+                    <div class="baap_name">
+                    <div class="d-inline-flex mb-0">
+
+                        <p class="the_baap">the</p>&nbsp;
+                        <p><b class="the_baap">Baap Company</b></p>&nbsp;
+                    </div>
+                   <div>
+                    <div class="d-inline-flex">
+                        <p class="font_family">Font Family</p>&nbsp;
+                        <p><b class="google_font">Kumbh Sans (Available on Google Fonts)</b></p>&nbsp;
+                    </div>
+                </div>
+                   </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-3 p-0 m-0">
+                <div>
+                    <h6 class="noticeboard border_bottom">
+                        NOTICEBOARD
+                    </h6>
+                    <div class="notice_padding">
+                        <p class="noticte_point pt-2">Water problem in the city for the next two days</p>
+                        <p class="note_p">Make sure that you are using your registered email ID for signing up with
+                            the gram panchayat app. We do not recommend you to share your password with anyone.</p>
+                        <hr class="bg-dark">
+                    </div>
+                    <div class="">
+                        <p class="noticte_point pt-2">Water problem in the city for the next two days</p>
+                        <p class="note_p">Make sure that you are using your registered email ID for signing up with
+                            the gram panchayat app. We do not recommend you to share your password with anyone.</p>
+                        <hr class="bg-dark">
+                    </div>
+                    <div class="">
+                        <p class="noticte_point pt-2">Water problem in the city for the next two days</p>
+                        <p class="note_p">Make sure that you are using your registered email ID for signing up with
+                            the gram panchayat app. We do not recommend you to share your password with anyone.</p>
+                        <hr class="bg-dark">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -1,6 +1,6 @@
 .left_float {
     width: 5%;
-    background-color: #d4d4d8;
+    background-color: #ECECF5;
     height: 100vh;
     float: left;
     position: fixed;
@@ -10,11 +10,11 @@
     width: 80%;
     float: left;
     height: 100vh;
-    background-color: rgb(252, 240, 242);
+    background-color: #F5F5FC;
 }
 .right_float {
     width: 20%;
-    background-color: #d4d4d8;
+    background-color: #ECECF5;
     height: 100vh;
     /* position: fixed; */
     float: left;
@@ -25,7 +25,7 @@
 }
 .login_box {
     border: 1px solid rgb(250, 246, 246);
-    background-color: rgb(229, 244, 245);
+    background-color: #FFFFFF;
     width: 75%;
     height: auto;
     border-radius: 14px;
@@ -40,7 +40,7 @@
     margin-top: 40%;
 }
 .border {
-    border: 2px solid rgb(131, 130, 130);
+    border: 2px solid #E8E8E8;
     position: absolute;
     right: 5%;
     height: 25vh;
@@ -87,8 +87,8 @@ input {
 }
 
 .box_link {
-    border: 1px solid rgb(252, 227, 227);
-    background-color: rgb(229, 244, 245);
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
     width: 90%;
     height: auto;
     border-radius: 14px;
@@ -104,7 +104,10 @@ input {
     opacity: 1;
 
 }
-
+.pin_icon{
+    height: 17px;
+    width: 16px;
+}
 @media(min-width:50px) and (max-width:767px) {
     .padding-left {
         padding-top: 50px;

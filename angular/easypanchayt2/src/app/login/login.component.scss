@@ -1,40 +1,69 @@
-.height {
+.left_float {
+    width: 5%;
+    background-color: #ECECF5;
     height: 100vh;
+    float: left;
+    position: fixed;
 }
-.height2{
+
+.left_float1 {
+    width: 80%;
+    float: left;
     height: 100vh;
-    background-color: #f1f1f8;
+    background-color: #F5F5FC;
 }
-.box {
-    background-color: #ffff;
+.right_float {
+    width: 20%;
+    background-color: #ECECF5;
+    height: 100vh;
+    /* position: fixed; */
+    float: left;
+    padding-top: 80px;
+}
+.login_box {
+    border: 1px solid rgb(250, 246, 246);
+    background-color: #FFFFFF;
+    width: 75%;
+    height: auto;
     border-radius: 14px;
-    padding: 10px;
-    width: 100%;
-
 }
 
-.bg {
-    background-color: rgb(158, 174, 190);
+.box_link {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    width: 90%;
+    height: auto;
+    border-radius: 14px;
+    padding: 13px;
 }
 
-.gram_logo {
+
+
+
+
+
+.bb {
+    height: 120vh;
+}
+
+.padding-left {
+    padding-top: 200px;
+    /* padding-left: 200px; */
+}
+.logo {
     height: 10vh;
-    width: 100%;
+    width: auto;
     margin-top: 40%;
-    /* margin-bottom: -20%; */
 }
-
-.padding_box {
-    padding-top: 30%;
-}
-
 .border {
     border: 2px solid rgb(131, 130, 130);
     position: absolute;
     right: 5%;
     height: 25vh;
     margin-top: 5%;
-
+}
+.box_content {
+    padding: 10px;
 }
 
 .log_in {
@@ -62,7 +91,7 @@ input::placeholder {
 
 input {
 
-    width: 83%;
+    width: 93%;
 }
 
 .btn_text {
@@ -72,19 +101,34 @@ input {
     color: rgb(214, 209, 209);
 
 }
-.pl{
-    padding-left: -10%;
+
+.box_link p {
+    font-size: 12px;
+    color: var(--unnamed-color-707070);
+    font: normal normal medium 14px/17px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+
 }
-
-
-@media (min-width:320px) and (max-width:767px){
-    .gram_logo {
-       
-        margin-top: 0%;
-        margin-bottom: 0%;
+.pin_icon{
+    height: 17px;
+    width: 16px;
+}
+@media(min-width:50px) and (max-width:767px) {
+    .padding-left {
+        padding-top: 50px;
+        padding-left: 0px;
+        margin-bottom: 50px;
     }
-    .height2{
-        height: auto;
+
+    .right_float {
+        width: 100%;
     }
-      
+
+    .left_float1 {
+        width: 100%;
+
+    }
+
 }

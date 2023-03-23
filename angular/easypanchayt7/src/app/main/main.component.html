@@ -1,0 +1,270 @@
+<div class="float_left">
+    <div class="row ">
+        <div class="col-12 text-center p-0 m-0">
+            <img src="../../assets/grampanchayt.png" class="image d-none d-md-none d-lg-block" alt="">
+
+            <div class="mt-4">
+                <div>
+                    <img src="../../assets/home.svg" class="icon" alt=""><br>
+                    <b class="left_text">home</b>
+                </div>
+                <div>
+                    <img src="../../assets/database.svg" class="icon" alt=""><br>
+                    <b class="left_text">Master Data</b>
+                </div>
+                <div>
+                    <img src="../../assets/people-fill.svg" class="icon" alt=""><br>
+                    <b class="left_text">Authorizations</b>
+                </div>
+                <div>
+                    <img src="../../assets/notes.svg" class="icon" alt=""><br>
+                    <b class="left_text">Notes</b>
+                </div>
+                <div class="pr-3">
+                    <img src="../../assets/settings-line.svg" class="setting" alt=""><br>
+                    <!-- <b class="left_text">Setting</b> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="float_mid ">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0">
+                <div>
+                    <img src="../../assets/grampanchayt.png" class="image d-lg-none d-md-block d-sm-block" alt="">
+                </div>
+                <div class="d-inline-flex mb-3">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-user-group"></i>
+                          
+                            <b class="pl-lg-2 pl-md-2 pl-0 text_33">Roles</b>
+                        </span>                       
+                    </div>
+                </div>
+                <div class="hr mb-1"></div>
+                <div>
+                    <h6 class="mb-0"><b class="text_33">Create Role</b></h6>
+                    <small class="text_role">Showing all the list of roles for your organization</small>
+
+                </div>
+
+                <div class="row p-0 m-0">
+                    <div class="col-12 p-0 m-0">
+
+
+                        <div class="input_box1 pb-4">
+                            <div class="row p-0 m-0">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 m-0">
+                                    <!-- <div>
+                                    <input type="text" placeholder="ग्रामपंचायतीचे नाव" class="input_box">
+                                </div> -->
+
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName" placeholder="ग्रामपंचायतीचे नाव"
+                                            class="form-control mb-3 input_box"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">ग्रामपंचायतीचे नाव : is required
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 
+                                <div>
+                                    <input type="text" placeholder="मोबाइलला आलेला कोड टाका">
+                                </div> -->
+
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName"
+                                            placeholder="मोबाइलला आलेला कोड टाका" class="form-control mb-3"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">मोबाइलला आलेला कोड टाका : is
+                                                required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div>
+                                    <input type="text" placeholder="मोबाइलला आलेला कोड टाका">
+                                </div> -->
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName"
+                                            placeholder="मोबाइलला आलेला कोड टाका" class="form-control mb-3"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">मोबाइलला आलेला कोड टाका : is
+                                                required</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 m-0 text-center">
+
+                                    <div class="d-inline-flex pt-3">
+                                        <div>
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="">
+                                            <p class="pl-1 pt-1 mb-4">ग्रुप ग्रामपंचायत आहे का ?</p>
+                                            <select class="btn btn2 btn-sm" placeholder="">
+                                                <option name="" value="" style="display:none;">चालू महिना </option>
+                                                <option name="January" value="Jan">जानेवारी</option>
+                                                <option name="February" value="Feb">फेब्रुवारी</option>
+                                                <option name="March" value="Mar">मार्च</option>
+                                                <option name="April" value="Apr">एप्रिल</option>
+                                                <option name="May" value="May">मे</option>
+                                                <option name="June" value="Jun">जून</option>
+                                                <option name="July" value="Jul">जुलै</option>
+                                                <option name="August" value="Aug">ऑगस्ट</option>
+                                                <option name="September" value="Sep">सप्टेंबर</option>
+                                                <option name="October" value="Oct">ऑक्टोबर</option>
+                                                <option name="November" value="Nov">नोव्हेंबर</option>
+                                                <option name="December" value="Dec">डिसेंबर</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row p-0 m-0 mt-2">
+                    <div class="col-12 p-0 m-0">
+
+                        <div class="input_box1 pb-4">
+                            <div class="row p-0 m-0">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0 m-0">
+                                   
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName" placeholder="ग्रामपंचायतीचे नाव"
+                                            class="form-control mb-2 input_box"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">ग्रामपंचायतीचे नाव : is required
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                 
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName"
+                                            placeholder="मोबाइलला आलेला कोड टाका" class="form-control mb-2"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">मोबाइलला आलेला कोड टाका : is
+                                                required</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group ">
+
+                                        <input type="text" formControlName="firstName"
+                                            placeholder="मोबाइलला आलेला कोड टाका" class="form-control mb-2"
+                                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div class="err_text" *ngIf="f.firstName.errors.required">मोबाइलला आलेला कोड टाका : is
+                                                required</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class=" col-12 col-sm-12 col-md-6 col-lg-6 p-0 m-0 text-center">
+
+                                    <div class="d-inline-flex pt-3">
+                                        <div>
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="">
+                                            <p class="pl-1 pt-1 mb-4">ग्रुप ग्रामपंचायत आहे का ?</p>
+                                            <select class="btn btn2 btn-sm" placeholder="">
+                                                <option name="" value="" style="display:none;">चालू महिना </option>
+                                                <option name="January" value="Jan">जानेवारी</option>
+                                                <option name="February" value="Feb">फेब्रुवारी</option>
+                                                <option name="March" value="Mar">मार्च</option>
+                                                <option name="April" value="Apr">एप्रिल</option>
+                                                <option name="May" value="May">मे</option>
+                                                <option name="June" value="Jun">जून</option>
+                                                <option name="July" value="Jul">जुलै</option>
+                                                <option name="August" value="Aug">ऑगस्ट</option>
+                                                <option name="September" value="Sep">सप्टेंबर</option>
+                                                <option name="October" value="Oct">ऑक्टोबर</option>
+                                                <option name="November" value="Nov">नोव्हेंबर</option>
+                                                <option name="December" value="Dec">डिसेंबर</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-sm-3 pt-md-4 pt-lg-5">
+                            <button class="btn btn-sm bg-dark text-white">सेव्ह करा</button>
+
+                            <button class="btn btn-sm bg-white text-dark ml-2" type="reset" (click)="onReset()">कॅन्सल करा</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-7"></div>
+                            <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+</div>
+<div class="float_right">
+    <div class="row p-0 m-0">
+        <div class="col-12 p-0 m-0">
+            <div class="rightfloat_padding pb-2">
+                <div class="d-inline-flex">
+                    <div>
+                        <b class="right_text1">पारेगांव खुर्द</b>
+                    </div>
+                    <div class="float_bell">
+                        <i class="fa-regular fa-bell "></i>
+                    </div>
+                    <div>
+                        <img src="../../assets/profilepic.jpg" class="rounded-circle profile" alt="">
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="hr2 mb-1"></div>
+            <div class="mb-4">
+                <h6 class="text_333">ग्रामपंचायती माहिती</h6>
+            </div>
+            <div>
+                <img src="../../assets/sitting.png" class="sitting_img" alt="">
+            </div>
+            <div>
+                <p class="gram_text2 pt-3 ">सदर फॉर्म मध्ये आपण आपल्या गावची सगळी माहिती योग्य पद्धतीने टाका. हि माहिती
+                    इतर
+                    बऱ्याच ठिकाणी वापरली जाणार आहे. खरं तर या माहितीचा उपयोग वेगवेगळ्या फॉर्म्स वर आणि दाखल्यावर केला
+                    जाणार आहे, त्यामुळे ही माहिती नीट भरावी.<br><br> आपण हे सुद्धा लक्षात ठेवा की, ही माहिती आपणास एकदाच
+                    भरावी
+                    लागणार आहे. ही दररोज टाकण्याची गरज नाही.</p>
+            </div>
+        </div>
+    </div>
+</div>

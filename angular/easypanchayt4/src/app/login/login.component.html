@@ -1,1 +1,62 @@
-<p>login works!</p>
+
+<div class='left_float d-none d-lg-block '></div>
+            
+
+<div class='left_float1'>
+
+    <div class='row p-0 m-0'>
+
+        <!-- {/* ----------------------main login page column------------------ */} -->
+        <div class='col-4'></div>
+        <div class='col-12 col-sm-12 col-md-12 col-lg-8 p-0 m-0 '>
+            <!-- <div class='left_float d-none d-lg-block'>feawFQ</div>  -->
+            <div class='padding-left '>
+                <!-- {/* ----------login box---------- */} -->
+                <div class='login_box  mx-auto'>
+                    <div class='row'>
+                        <div class='col-12 col-sm-12 col-md-5 col-lg-5 text-center'>
+                            <div class='d-inline-flex pl-2'>
+                                <img src="../../assets/grampanchayt.png" class="logo">
+                                <div class="border d-none d-lg-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-12 col-sm-12 col-md-7 col-lg-7  '>
+                            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <div class="box_content">
+                                <b class="log_in">लॉगीन करा </b><br />
+                                <p>तुमची पूर्ण ग्रामपंचात, अगदी सोप्या पद्धतीने, तुमच्यासाठी !</p>
+                                <div class="mb-3">
+                                    <!-- <input type="text" placeholder="मोबाइलला आलेला कोड टाका" class="mb-3" /> -->
+                                    <div class="form-group ">
+                                     
+                                        <input type="text" formControlName="firstName"  placeholder="मोबाइलला आलेला कोड टाका" class="form-control mb-3" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                            <div *ngIf="f.firstName.errors.required">कोडनाव : is required</div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- <div class="mb-2">
+                                    <button class="btn btn-sm rounded-pill bg-dark"><b
+                                        class="btn_text">कोड पाठवा </b></button>
+                                </div> -->
+                                <div class="mb-2">
+                                    <button class="btn btn-sm rounded-pill bg-dark"><b class="btn_text">कोड पाठवा</b></button>
+                                            <!-- <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button> -->
+                                </div>
+                                <div>
+                                    <p class="mb-1">किंवा</p>
+                                    <p><b class="text-dark">कोड नावाने लॉगिन करा.</b></p>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='right_float'>
+</div>

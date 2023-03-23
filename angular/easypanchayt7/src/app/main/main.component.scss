@@ -1,0 +1,367 @@
+.float_left {
+    width: 5%;
+    background-color: #ECECF5;
+    height: 100vh;
+    float: left !important;
+    padding: 0%;
+ 
+}
+
+.float_mid {
+    width: 70%;
+    background-color: #F5F5FC;
+    height: 100vh;
+    float: left !important;
+    padding: 25px;
+    padding-bottom: 20px;
+    
+}
+
+.float_right {
+    width: 25%;
+    background-color: #ECECF5;
+    height: 100vh;
+    float: right;
+    // position: fixed;
+}
+
+.image {
+    height: 30px;
+    width: 65px;
+    margin-top: 24%;
+    margin-left: 12%;
+}
+
+.icon {
+    margin-top: 30px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -5%;
+}
+
+.setting {
+    position: absolute;
+    top: 260%;
+    width: 16px;
+    height: 16px;
+}
+
+.text_role{
+    font-size: 9px;
+
+}
+
+.notes_icon {
+    width: 16px;
+    height: 16px;
+}
+
+p {
+    font-size: 11px;
+}
+
+b {
+    font-size: 15px;
+}
+
+.btn1 {
+    width: 100px;
+    background-color: #C9C6C629;
+    color: white;
+    position: absolute;
+    right: 0;
+    padding-left: -50px;
+    text-align: left;
+    color: black;
+    border: 1px solid #CCCCCC;
+    width: 110px;
+    font-size: 10px;
+    // justify-content: space-between;
+}
+
+.cross_btn {
+    position: absolute;
+    right: 1%;
+}
+
+.hr {
+    border: 1px solid #ccccce;
+}
+
+.pop_pup {
+
+    border: 1px solid #45E09329;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: #45E09329;
+    border: none;
+    color: #115506;
+}
+
+.text_3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text_33 {
+    font-size: 1.3ch;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.gram_text2 {
+    color: #707070;
+    font-size: 10px;
+    padding-left: 22px;
+}
+
+.gram_text3 {
+    color: #707070;
+    font-size: 10px;
+    margin-bottom: 1%;
+}
+
+.input_box1 {
+    border: 1px solid #D8D5D5;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 100%;
+    padding: 12px;
+    padding-bottom: 0%;
+}
+
+input::placeholder {
+    font-size: 9px;
+    color: #D1D1D1;
+    padding-left: 7px;
+}
+
+input {
+    margin-top: 3%;
+    width: 99%;
+    height: 4vh;
+}
+
+.input_box {
+
+    margin-top: 3%;
+    width: 55%;
+    height: 4vh;
+}
+
+.btn2 {
+    width: 100px;
+    background-color: #C9C6C629;
+    color: white;
+    padding-left: -50px;
+    text-align: left;
+    color: black;
+    border: 1px solid #CCCCCC;
+    width: 110px;
+    margin-left: -27%;
+    font-size: 10px;
+    // justify-content: space-between;
+}
+
+.btn {
+    font-size: 10px;
+    border: 1px solid #707070;
+}
+
+.pop_pup2 {
+    height: auto;
+    width: 70%;
+    background: #fd946d 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 20px #45E09329;
+    // opacity: 0.14;
+    padding: 4px;
+   margin-top: -10px;
+
+
+}
+
+.icon_i2 {
+    color: #b94e02;
+}
+
+.text_4 {
+    font-size: 10px;
+}
+.rightfloat_padding{
+    padding:22px 22px 0px 22px;
+}
+.right_text1{
+    color: #0AADCB;
+    font-size: 14px;
+}
+.profile{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 12%;
+}
+.float_bell{
+    position: absolute;
+    right: 34%;
+    font-size: 20px;
+    color: #0AADCB;
+}
+.hr2 {
+    border: 1px solid #F5F5FC;
+    margin-top: 1%;
+}
+.text_333 {
+    font-size: 1.3ch;
+    font-weight: bold;
+    padding-top: 12px;
+    margin-bottom: 0%;
+    padding-left: 22px;
+}
+.sitting_img{
+    height: 25vh;
+    margin-left: 22px;
+}
+.left_text{
+    font-size: 8px;
+}
+.err_text{
+    font-size: 8px;
+}
+
+
+
+@media(min-width:50px) and (max-width:600px) {
+    .gram_text3 {
+        font-size: 8px;
+        padding-left: 4px;
+        margin-bottom: 5%;
+    }
+
+    b {
+        font-size: 12px;
+
+    }
+
+    .notes_icon {
+        height: 13px;
+        width: 13px;
+        margin-left: 4px;
+    }
+
+    .image {
+        height: 35px !important;
+        width: 76px !important;
+    }
+
+    .text_33 {
+        font-size: 1ch;
+        padding-top: 8px;
+    }
+
+    .setting {
+        position: absolute;
+        top: 116%;
+        width: 16px;
+        height: 16px;
+    }
+
+    .text_3 {
+        font-size: 10px;
+    }
+
+    .icon_i {
+        font-size: 13px;
+    }
+
+    .btn2 {
+        margin-left: 0%;
+    }
+
+    input::placeholder {
+
+        padding-left: 0px;
+    }
+    .left_text{
+        font-size: 6px;
+    }
+   
+}
+
+
+
+@media(min-width:50px) and (max-width:767px) {
+
+    .float_right {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .float_left {
+        width: 10%;
+
+    }
+
+    .float_mid {
+        width: 90%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 0%;
+        height: fit-content;
+        padding-bottom:5px;
+    }
+
+    .gram_text2 {
+        font-size: 8px;
+    }
+
+    .gram_text1 {
+        font-size: 14px;
+    }
+
+    .image {
+        height: 35px;
+        width: 76px;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+
+    .pop_pup2 {
+
+        padding: 3px;
+        position: unset;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .float_mid {
+        width: 90%;
+
+    }
+
+    .float_left {
+        width: 10%;
+    }
+
+    .float_right {
+        width: 100%;
+    }
+
+    .image {
+        height: 35px;
+        width: 76px;
+        margin-top: -2%;
+        margin-left: 0%;
+    }
+}
+
+@media(min-width:800px) and (max-width:1024px) {
+    .float_mid {
+        width: 93.5%;
+
+    }
+
+    .float_left {
+        width: 6.5%;
+    }
+}
